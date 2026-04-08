@@ -8,7 +8,7 @@ typedef struct   //定义结构体，名称
 }sqList;
 bool ListInsert(sqList* L, int pos, int val)//判断是否满足条件
 {
-	if (pos<1 || pos>L->length + 1)  //位置在有效长度里
+	if (pos<1 || pos>L->length + 1)  //判断pos是否在[1,length+1]里
 		return false;
 	if ( L->length>= maxsize)  //长度不能超过最大
 		return false;
